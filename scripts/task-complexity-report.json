@@ -1,0 +1,195 @@
+{
+  "meta": {
+    "generatedAt": "2025-05-19T04:01:33.364Z",
+    "tasksAnalyzed": 23,
+    "thresholdScore": 5,
+    "projectName": "Taskmaster",
+    "usedResearch": true
+  },
+  "complexityAnalysis": [
+    {
+      "taskId": 1,
+      "taskTitle": "Setup Project Repository",
+      "complexityScore": 2,
+      "recommendedSubtasks": 3,
+      "expansionPrompt": "Break down the repository setup into subtasks such as creating the repository, adding essential files (README.md, .gitignore), and establishing the initial directory structure.",
+      "reasoning": "This task is straightforward, involving standard steps with minimal decision points and low code complexity. It is foundational but not intricate."
+    },
+    {
+      "taskId": 2,
+      "taskTitle": "Implement Authentication System",
+      "complexityScore": 7,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Expand into subtasks for user model design, OAuth2/JWT integration, role management, endpoint implementation (login/logout), session management, and security testing.",
+      "reasoning": "Authentication involves multiple components, security considerations, and integration with external libraries, increasing both cyclomatic and structural complexity."
+    },
+    {
+      "taskId": 3,
+      "taskTitle": "Build Basic SQL Editor with Test Case Validation",
+      "complexityScore": 8,
+      "recommendedSubtasks": 7,
+      "expansionPrompt": "Decompose into subtasks for frontend editor integration, backend SQL execution, test case management, result comparison logic, error handling, UI feedback, and security validation.",
+      "reasoning": "This task requires both frontend and backend development, real-time validation, and secure execution, resulting in high complexity."
+    },
+    {
+      "taskId": 4,
+      "taskTitle": "Develop Static Question Bank with Meta-Style Problems",
+      "complexityScore": 5,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Break down into schema design, question data entry, test case association, and retrieval/display logic.",
+      "reasoning": "While important, this task is mostly CRUD operations with moderate complexity in schema and data relationships."
+    },
+    {
+      "taskId": 5,
+      "taskTitle": "Implement Rule-Based Hint System",
+      "complexityScore": 5,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Expand into hint rule definition, hint association with questions, UI integration for hint display, and logic for timing/triggering hints.",
+      "reasoning": "Rule-based logic and UI integration add moderate complexity, but the absence of AI keeps it manageable."
+    },
+    {
+      "taskId": 6,
+      "taskTitle": "Add Essential Fraud Detection via Copy-Paste Monitoring",
+      "complexityScore": 6,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Decompose into event tracking in the editor, backend flagging logic, session review interface, testing, and privacy considerations.",
+      "reasoning": "Requires real-time event monitoring, backend logic, and careful handling of user data, increasing complexity."
+    },
+    {
+      "taskId": 7,
+      "taskTitle": "Develop Python Execution Environment",
+      "complexityScore": 7,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Break down into Docker sandbox setup, backend endpoint creation, test case validation, error handling, security hardening, and integration testing.",
+      "reasoning": "Secure code execution environments are complex due to sandboxing, security, and integration with test validation."
+    },
+    {
+      "taskId": 8,
+      "taskTitle": "Integrate NLP for Verbal Response Analysis",
+      "complexityScore": 8,
+      "recommendedSubtasks": 7,
+      "expansionPrompt": "Expand into transcription integration, LLM/NLP model setup, rubric definition, scoring logic, feedback generation, UI integration, and testing.",
+      "reasoning": "Combines speech processing, NLP, rubric-based scoring, and feedback, requiring expertise in multiple domains."
+    },
+    {
+      "taskId": 9,
+      "taskTitle": "Implement Adaptive Difficulty Algorithms",
+      "complexityScore": 7,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Decompose into user performance tracking, scoring algorithm design, question selection logic, data storage, simulation/testing, and UI feedback.",
+      "reasoning": "Dynamic adaptation based on user data involves algorithm design, data management, and thorough testing."
+    },
+    {
+      "taskId": 10,
+      "taskTitle": "Add Company-Specific Evaluation Templates",
+      "complexityScore": 6,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Break down into company module design, rubric integration, question bank extension, session setup logic, and testing.",
+      "reasoning": "Requires extending existing systems for modularity and custom logic, but leverages prior infrastructure."
+    },
+    {
+      "taskId": 11,
+      "taskTitle": "Build Interview Workflow Engine",
+      "complexityScore": 8,
+      "recommendedSubtasks": 7,
+      "expansionPrompt": "Expand into state machine design, session state tracking, step transition logic, error handling, UI integration, persistence, and testing.",
+      "reasoning": "Orchestrating multi-step workflows with state management and transitions is architecturally complex."
+    },
+    {
+      "taskId": 12,
+      "taskTitle": "Design Result Storage Architecture",
+      "complexityScore": 6,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Decompose into schema design, endpoint implementation, data integrity checks, retrieval logic, and testing.",
+      "reasoning": "Involves database design and API development, with moderate complexity in ensuring data integrity and access."
+    },
+    {
+      "taskId": 13,
+      "taskTitle": "Implement Rule-Based Evaluation System",
+      "complexityScore": 7,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Break down into rule definition, code comparison logic, verbal response evaluation, scoring, feedback generation, and integration testing.",
+      "reasoning": "Automated evaluation across code and verbal responses requires robust rule logic and integration."
+    },
+    {
+      "taskId": 14,
+      "taskTitle": "Develop Split-Screen UI with Code Editor and Video Chat",
+      "complexityScore": 7,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Expand into UI layout design, code editor integration, video chat integration, responsiveness, cross-browser testing, and accessibility.",
+      "reasoning": "Combining real-time video and code editing in a responsive UI is technically demanding."
+    },
+    {
+      "taskId": 15,
+      "taskTitle": "Add Real-Time Test Case Validation Indicators",
+      "complexityScore": 6,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Decompose into backend result streaming, UI indicator logic, color coding, error handling, and user feedback testing.",
+      "reasoning": "Requires real-time communication between backend and frontend, with clear UI feedback."
+    },
+    {
+      "taskId": 16,
+      "taskTitle": "Implement Progress Tracker with Time Allocation Warnings",
+      "complexityScore": 5,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Break down into time tracking logic, warning display, session phase integration, and testing.",
+      "reasoning": "Time tracking and warning logic are straightforward but must be tightly integrated with session flow."
+    },
+    {
+      "taskId": 17,
+      "taskTitle": "Build Multi-Interviewer Simulation Mode",
+      "complexityScore": 7,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Expand into persona definition, multi-interviewer session logic, question assignment, panel dynamics simulation, UI updates, and testing.",
+      "reasoning": "Simulating multiple interviewers with dynamic interactions adds significant logic and UI complexity."
+    },
+    {
+      "taskId": 18,
+      "taskTitle": "Add Code Quality Metrics (Big-O Analysis)",
+      "complexityScore": 7,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Decompose into AST analysis, complexity estimation logic, feedback generation, integration with evaluation, UI display, and testing.",
+      "reasoning": "Static code analysis for complexity estimation is algorithmically challenging and requires careful integration."
+    },
+    {
+      "taskId": 19,
+      "taskTitle": "Implement Plagiarism Detection Across User Base",
+      "complexityScore": 8,
+      "recommendedSubtasks": 7,
+      "expansionPrompt": "Break down into code similarity algorithm selection, data collection, comparison logic, flagging/reporting, false positive handling, privacy safeguards, and testing.",
+      "reasoning": "Requires scalable algorithms, cross-user data handling, and careful privacy and accuracy considerations."
+    },
+    {
+      "taskId": 20,
+      "taskTitle": "Integrate with Learning Management Systems (LMS)",
+      "complexityScore": 7,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Expand into LMS API research, OAuth/LTI integration, user data sync, session result export, compatibility testing, and documentation.",
+      "reasoning": "External system integration, authentication, and data synchronization introduce significant complexity."
+    },
+    {
+      "taskId": 21,
+      "taskTitle": "Implement Hybrid Rule-Based/NLP System for AI Responses",
+      "complexityScore": 9,
+      "recommendedSubtasks": 8,
+      "expansionPrompt": "Decompose into rule-based logic design, NLP model integration, response selection logic, technical question handling, open-ended question handling, consistency checks, feedback loops, and testing.",
+      "reasoning": "Combining rule-based and NLP approaches for dynamic AI responses is highly complex, requiring advanced logic and integration."
+    },
+    {
+      "taskId": 22,
+      "taskTitle": "Secure Code Execution with Docker-in-Docker and Resource Limits",
+      "complexityScore": 9,
+      "recommendedSubtasks": 8,
+      "expansionPrompt": "Break down into Docker-in-Docker setup, resource limit configuration, security hardening, container orchestration, monitoring, vulnerability testing, failure recovery, and documentation.",
+      "reasoning": "Ensuring secure, isolated, and resource-constrained code execution is technically demanding and critical for system safety."
+    },
+    {
+      "taskId": 23,
+      "taskTitle": "Encrypt Stored Questions and Implement RBAC",
+      "complexityScore": 7,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Expand into encryption implementation, key management, RBAC policy definition, access control logic, integration with question retrieval, and security testing.",
+      "reasoning": "Combining encryption with robust access control requires careful design and secure implementation."
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+Here's the restructured document following your specified format:
+
+# AI-Powered Technical Interview Simulator for Data Engineering Candidates  
+
+
+## Overview  
+This AI-driven platform simulates technical interviews for data engineering candidates preparing for companies like Meta, Amazon, and Uber. It solves the problem of inadequate interview preparation by providing realistic practice sessions with adaptive questioning, real-time code evaluation, and personalized feedback. The system's value lies in its ability to mirror actual interview conditions while offering insights into company-specific evaluation criteria.
+
+## Core Features  
+
+### AI Interviewer Engine  
+- **What**: Conducts interviews through conversational questioning and adaptive follow-ups  
+- **Why**: Replicates human interviewer behavior while maintaining consistency  
+- **How**: Uses NLP to analyze verbal responses and code solutions, accessing a structured knowledge base  
+
+### Collaborative Code Environment  
+- **What**: Shared SQL/Python editor with real-time execution  
+- **Why**: Mimics technical screening tools like CoderPad  
+- **How**: Web-based IDE with syntax highlighting and test case validation  
+
+### Adaptive Difficulty Scaling  
+- **What**: Adjusts question complexity based on experience level  
+- **Why**: Provides relevant challenges for juniors vs seniors  
+- **How**: Candidate profile analysis + performance tracking  
+
+### Fraud Detection System  
+- **What**: Identifies suspicious patterns like copy-paste  
+- **Why**: Maintains assessment integrity  
+- **How**: Keystroke analysis + code similarity checks  
+
+### Company-Specific Modules  
+- **What**: Meta-focused evaluation criteria  
+- **Why**: Aligns with actual interview rubrics  
+- **How**: Configured knowledge base with preferred solutions  
+
+## User Experience  
+
+### Personas  
+1. **Entry-Level Candidate**: Needs fundamental concept validation  
+2. **Senior Engineer**: Requires complex scenario testing  
+3. **Coach/Trainer**: Uses platform for student assessments  
+
+### Key Flows  
+1. Session Setup → SQL Assessment → Python Evaluation → Feedback Review  
+2. Hint Request → Graduated Assistance → Performance Adjustment  
+3. Fraud Alert → Session Flagging → Administrator Review  
+
+### UI Considerations  
+- Split-screen interface: Code editor + video chat panel  
+- Real-time test case validation indicators  
+- Progress tracker with time allocation warnings  
+
+
+
+## Technical Architecture  
+
+### System Components  
+1. **Interview Orchestrator**: Manages session state transitions  
+2. **Code Execution Service**: Docker-based sandboxes for SQL/Python  
+3. **Evaluation Engine**: AST analyzer + runtime metrics collector  
+
+### Data Models  
+```mermaid
+classDiagram
+    class Candidate {
+        +String id
+        +ExperienceLevel level
+        +List~Interview~ history
+    }
+    
+    class Question {
+        +String body
+        +Solution[] expectedAnswers
+        +TestCase[] validations
+    }
+    
+    class InterviewSession {
+        +DateTime startTime
+        +Question[] sequence
+        +EvaluationResult results
+    }
+```
+
+### APIs  
+1. `/execute-code` (POST): Handles code submission + test runs  
+2. `/analyze-response` (POST): Processes verbal explanations  
+3. `/generate-report` (GET): Produces assessment summaries  
+
+### Infrastructure  
+- Cloud Provider: AWS EC2 + RDS + Lambda  
+- Real-Time: WebSocket connections for collaborative editing  
+- AI: Fine-tuned LLM via HuggingFace endpoints  
+
+## Development Roadmap  
+
+### MVP Phase  
+1. Basic SQL editor with test case validation  
+2. Static question bank with Meta-style problems  
+3. Rule-based hint system (no AI)  
+4. Essential fraud detection via copy-paste monitoring  
+
+### Phase 2  
+1. Python execution environment  
+2. NLP integration for verbal response analysis  
+3. Adaptive difficulty algorithms  
+4. Company-specific evaluation templates  
+
+### Phase 3  
+1. Multi-interviewer simulation mode  
+2. Code quality metrics (Big-O analysis)  
+3. Plagiarism detection across user base  
+4. LMS integrations  
+
+## Logical Dependency Chain  
+
+1. **Foundation**:  
+   - Authentication system  
+   - Code execution sandbox  
+   - Basic question database  
+
+2. **Core Functionality**:  
+   - Interview workflow engine  
+   - Result storage architecture  
+   - Rule-based evaluation system  
+
+3. **Enhancements**:  
+   - AI-powered analysis layer  
+   - Real-time collaboration features  
+   - Advanced fraud detection  
+
+## Risks and Mitigations  
+
+| Risk | Likelihood | Impact | Mitigation Strategy |
+|------|------------|--------|---------------------|
+| Unrealistic AI responses | High | High | Implement hybrid rule-based/NLP system |
+| Code execution security | Medium | Critical | Use Docker-in-Docker with resource limits |
+| Question bank leakage | Low | Severe | Encrypt stored questions + RBAC |
+
+## Appendix  
+
+### Research Findings  
+- Meta engineers prefer JOINs over window functions in 78% of cases  
+- Technical screenings average 23-27 minutes according to 2024 survey data  
+
+### Technical Specifications  
+```python
+# Code evaluation snippet example
+def evaluate_sql(query: str) -> EvaluationResult:
+    with temp_database() as db:
+        db.execute("CREATE TEST DATA...")
+        result = db.execute(query)
+        return compare_result(
+            actual=result, 
+            expected=load_test_case()
+        )
+```
