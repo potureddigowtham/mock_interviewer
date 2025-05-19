@@ -1,0 +1,31 @@
+# Task ID: 1
+# Title: Setup Project Repository
+# Status: pending
+# Dependencies: None
+# Priority: high
+# Description: Initialize a version-controlled repository for the project, including basic README, .gitignore, and initial project structure.
+# Details:
+Create a new repository on GitHub/GitLab. Add a README.md with project overview, .gitignore for Python/Node/Web projects, and a basic directory structure (src, tests, docs).
+
+# Test Strategy:
+Verify repository is accessible, contains required files, and can be cloned.
+
+# Subtasks:
+## 1. Create the Repository and Initialize Version Control [pending]
+### Dependencies: None
+### Description: Set up a new Git repository for the full-stack application, initialize it with Git, and push it to a remote platform (e.g., GitHub). Ensure branch protection rules are considered for code quality and security.
+### Details:
+Create a new repository on GitHub or your chosen platform. Initialize the local directory with 'git init', add the remote origin, and make the first commit. Set up branch protection rules to require pull request reviews and status checks for merges.
+
+## 2. Add Essential and Configuration Files [pending]
+### Dependencies: 1.1
+### Description: Create and add essential files such as README.md, .gitignore, and configuration files required for a full-stack AI project.
+### Details:
+Add a README.md with project overview and setup instructions. Create a .gitignore tailored for Node.js, Python, and other relevant stacks. Add configuration files such as package.json, .nvmrc (for Node version), Dockerfile (if using Docker), and any environment variable templates (e.g., .env.example).
+
+## 3. Establish Initial Directory Structure [pending]
+### Dependencies: 1.2
+### Description: Set up the foundational directory structure for a full-stack application with AI components, following best practices for organization.
+### Details:
+Create directories for backend (e.g., /server or /api), frontend (e.g., /client or /web), AI modules (e.g., /ai or /ml), and tests (e.g., /tests). Organize files by features or components, not just roles. Include placeholder files (like index.js, app.py, or main.py) as needed to scaffold the structure.
+

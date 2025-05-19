@@ -1,0 +1,11 @@
+# Task ID: 4
+# Title: Develop Static Question Bank with Meta-Style Problems
+# Status: pending
+# Dependencies: 1, 2
+# Priority: medium
+# Description: Populate a database with a set of static SQL questions and test cases, focusing on Meta-style interview problems.
+# Details:
+Design a Question table with fields for question text, expected solutions, and test cases. Seed the database with initial questions.
+
+# Test Strategy:
+Verify questions can be retrieved, displayed, and associated with test cases.

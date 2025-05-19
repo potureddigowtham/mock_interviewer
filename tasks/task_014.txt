@@ -1,0 +1,11 @@
+# Task ID: 14
+# Title: Develop Split-Screen UI with Code Editor and Video Chat
+# Status: pending
+# Dependencies: 3, 7
+# Priority: medium
+# Description: Create a user interface with a code editor and video chat panel for a realistic interview experience.
+# Details:
+Use React or similar framework to build a split-screen layout. Integrate video chat using WebRTC.
+
+# Test Strategy:
+Test UI responsiveness, editor functionality, and video chat connectivity.

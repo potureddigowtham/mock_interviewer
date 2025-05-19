@@ -1,0 +1,11 @@
+# Task ID: 6
+# Title: Add Essential Fraud Detection via Copy-Paste Monitoring
+# Status: pending
+# Dependencies: 3
+# Priority: medium
+# Description: Detect and flag suspicious activity such as copy-paste actions during coding sessions.
+# Details:
+Track keystrokes and clipboard events in the editor. Flag sessions with high copy-paste activity for review.
+
+# Test Strategy:
+Simulate copy-paste actions and verify detection and flagging.

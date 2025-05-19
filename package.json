@@ -1,0 +1,39 @@
+{
+  "name": "ai-interviewer",
+  "version": "1.0.0",
+  "description": "AI-Powered Technical Interview Simulator for Data Engineering Candidates",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd client && npm start\" \"cd server && python app.py\"",
+    "install-all": "npm install && cd client && npm install && cd ../server && pip install -r requirements.txt",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/potureddigowtham/mock_interviewer.git"
+  },
+  "keywords": [
+    "ai",
+    "interview",
+    "technical",
+    "data-engineering",
+    "sql",
+    "python"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/potureddigowtham/mock_interviewer/issues"
+  },
+  "homepage": "https://github.com/potureddigowtham/mock_interviewer#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "husky": "^8.0.3",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

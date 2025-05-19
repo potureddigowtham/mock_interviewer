@@ -1,0 +1,11 @@
+# Task ID: 16
+# Title: Implement Progress Tracker with Time Allocation Warnings
+# Status: pending
+# Dependencies: 11, 14
+# Priority: medium
+# Description: Show session progress and warn users when time is running low.
+# Details:
+Track elapsed time and remaining time for each session phase. Display warnings when time is nearly up.
+
+# Test Strategy:
+Test time tracking, warning display, and session progression.

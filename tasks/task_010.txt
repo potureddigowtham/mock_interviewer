@@ -1,0 +1,11 @@
+# Task ID: 10
+# Title: Add Company-Specific Evaluation Templates
+# Status: pending
+# Dependencies: 4, 9
+# Priority: medium
+# Description: Configure evaluation criteria and question sets for specific companies (e.g., Meta).
+# Details:
+Extend the question bank to include company-specific rubrics and preferred solutions. Allow selection of company modules during session setup.
+
+# Test Strategy:
+Verify company-specific questions and rubrics are correctly applied during sessions.

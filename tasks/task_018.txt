@@ -1,0 +1,11 @@
+# Task ID: 18
+# Title: Add Code Quality Metrics (Big-O Analysis)
+# Status: pending
+# Dependencies: 7, 13
+# Priority: low
+# Description: Analyze code submissions for efficiency and complexity.
+# Details:
+Implement AST analysis to estimate time/space complexity. Provide feedback on code quality.
+
+# Test Strategy:
+Test complexity analysis accuracy and feedback relevance.

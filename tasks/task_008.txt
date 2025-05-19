@@ -1,0 +1,11 @@
+# Task ID: 8
+# Title: Integrate NLP for Verbal Response Analysis
+# Status: pending
+# Dependencies: 2, 3
+# Priority: medium
+# Description: Analyze verbal explanations using NLP to provide feedback on clarity and correctness.
+# Details:
+Use a fine-tuned LLM (e.g., via HuggingFace) to process transcribed user responses. Score responses based on predefined rubrics.
+
+# Test Strategy:
+Test transcription accuracy, NLP scoring, and feedback generation.

@@ -1,0 +1,11 @@
+# Task ID: 12
+# Title: Design Result Storage Architecture
+# Status: pending
+# Dependencies: 2, 11
+# Priority: medium
+# Description: Store and retrieve interview results, including code, scores, and feedback.
+# Details:
+Design database tables for session results. Implement endpoints to save and retrieve results.
+
+# Test Strategy:
+Test result storage, retrieval, and integrity.

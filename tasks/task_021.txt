@@ -1,0 +1,11 @@
+# Task ID: 21
+# Title: Implement Hybrid Rule-Based/NLP System for AI Responses
+# Status: pending
+# Dependencies: 8, 13
+# Priority: high
+# Description: Combine rule-based logic with NLP to ensure realistic and accurate AI interviewer responses.
+# Details:
+Use a hybrid approach where NLP handles open-ended questions and rule-based logic ensures consistency for technical questions.
+
+# Test Strategy:
+Test response realism, consistency, and technical accuracy.

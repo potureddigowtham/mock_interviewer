@@ -1,0 +1,11 @@
+# Task ID: 17
+# Title: Build Multi-Interviewer Simulation Mode
+# Status: pending
+# Dependencies: 11, 14
+# Priority: low
+# Description: Allow multiple AI interviewers to simulate panel interviews.
+# Details:
+Extend the interview engine to support multiple interviewer personas. Simulate panel dynamics and questioning styles.
+
+# Test Strategy:
+Test multi-interviewer session setup, flow, and feedback.

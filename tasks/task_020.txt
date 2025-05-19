@@ -1,0 +1,11 @@
+# Task ID: 20
+# Title: Integrate with Learning Management Systems (LMS)
+# Status: pending
+# Dependencies: 2, 12
+# Priority: low
+# Description: Allow integration with external LMS platforms for user management and reporting.
+# Details:
+Implement OAuth/LTI integration with popular LMS platforms. Sync user data and session results.
+
+# Test Strategy:
+Test user sync, session result export, and LMS compatibility.

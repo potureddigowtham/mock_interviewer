@@ -1,0 +1,11 @@
+# Task ID: 3
+# Title: Build Basic SQL Editor with Test Case Validation
+# Status: pending
+# Dependencies: 1
+# Priority: high
+# Description: Create a web-based SQL editor that allows users to write and execute SQL queries, with real-time test case validation.
+# Details:
+Use Monaco Editor or similar for SQL editing. Implement a backend endpoint to execute SQL against a test database and compare results to expected outputs.
+
+# Test Strategy:
+Test SQL query execution, result comparison, and error handling for invalid queries.

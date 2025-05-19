@@ -1,0 +1,11 @@
+# Task ID: 5
+# Title: Implement Rule-Based Hint System
+# Status: pending
+# Dependencies: 3, 4
+# Priority: medium
+# Description: Provide hints to users based on predefined rules, without AI integration.
+# Details:
+Associate hints with each question. Display hints when requested by the user, based on time spent or incorrect attempts.
+
+# Test Strategy:
+Test hint display logic, timing, and user interaction.

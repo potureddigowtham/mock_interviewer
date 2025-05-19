@@ -1,0 +1,351 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Setup Project Repository",
+      "description": "Initialize a version-controlled repository for the project, including basic README, .gitignore, and initial project structure.",
+      "details": "Create a new repository on GitHub/GitLab. Add a README.md with project overview, .gitignore for Python/Node/Web projects, and a basic directory structure (src, tests, docs).",
+      "testStrategy": "Verify repository is accessible, contains required files, and can be cloned.",
+      "priority": "high",
+      "dependencies": [],
+      "status": "pending",
+      "subtasks": [
+        {
+          "id": 1,
+          "title": "Create the Repository and Initialize Version Control",
+          "description": "Set up a new Git repository for the full-stack application, initialize it with Git, and push it to a remote platform (e.g., GitHub). Ensure branch protection rules are considered for code quality and security.",
+          "dependencies": [],
+          "details": "Create a new repository on GitHub or your chosen platform. Initialize the local directory with 'git init', add the remote origin, and make the first commit. Set up branch protection rules to require pull request reviews and status checks for merges.",
+          "status": "pending"
+        },
+        {
+          "id": 2,
+          "title": "Add Essential and Configuration Files",
+          "description": "Create and add essential files such as README.md, .gitignore, and configuration files required for a full-stack AI project.",
+          "dependencies": [
+            1
+          ],
+          "details": "Add a README.md with project overview and setup instructions. Create a .gitignore tailored for Node.js, Python, and other relevant stacks. Add configuration files such as package.json, .nvmrc (for Node version), Dockerfile (if using Docker), and any environment variable templates (e.g., .env.example).",
+          "status": "pending"
+        },
+        {
+          "id": 3,
+          "title": "Establish Initial Directory Structure",
+          "description": "Set up the foundational directory structure for a full-stack application with AI components, following best practices for organization.",
+          "dependencies": [
+            2
+          ],
+          "details": "Create directories for backend (e.g., /server or /api), frontend (e.g., /client or /web), AI modules (e.g., /ai or /ml), and tests (e.g., /tests). Organize files by features or components, not just roles. Include placeholder files (like index.js, app.py, or main.py) as needed to scaffold the structure.",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Implement Authentication System",
+      "description": "Develop user authentication and authorization for candidates, coaches, and administrators.",
+      "details": "Use OAuth2 or JWT for secure authentication. Store user roles (candidate, coach, admin) in a database. Implement login/logout endpoints.",
+      "testStrategy": "Test user registration, login, role-based access, and session management.",
+      "priority": "high",
+      "dependencies": [
+        1
+      ],
+      "status": "pending",
+      "subtasks": []
+    },
+    {
+      "id": 3,
+      "title": "Build Basic SQL Editor with Test Case Validation",
+      "description": "Create a web-based SQL editor that allows users to write and execute SQL queries, with real-time test case validation.",
+      "details": "Use Monaco Editor or similar for SQL editing. Implement a backend endpoint to execute SQL against a test database and compare results to expected outputs.",
+      "testStrategy": "Test SQL query execution, result comparison, and error handling for invalid queries.",
+      "priority": "high",
+      "dependencies": [
+        1
+      ],
+      "status": "pending",
+      "subtasks": []
+    },
+    {
+      "id": 4,
+      "title": "Develop Static Question Bank with Meta-Style Problems",
+      "description": "Populate a database with a set of static SQL questions and test cases, focusing on Meta-style interview problems.",
+      "details": "Design a Question table with fields for question text, expected solutions, and test cases. Seed the database with initial questions.",
+      "testStrategy": "Verify questions can be retrieved, displayed, and associated with test cases.",
+      "priority": "medium",
+      "dependencies": [
+        1,
+        2
+      ],
+      "status": "pending",
+      "subtasks": []
+    },
+    {
+      "id": 5,
+      "title": "Implement Rule-Based Hint System",
+      "description": "Provide hints to users based on predefined rules, without AI integration.",
+      "details": "Associate hints with each question. Display hints when requested by the user, based on time spent or incorrect attempts.",
+      "testStrategy": "Test hint display logic, timing, and user interaction.",
+      "priority": "medium",
+      "dependencies": [
+        3,
+        4
+      ],
+      "status": "pending",
+      "subtasks": []
+    },
+    {
+      "id": 6,
+      "title": "Add Essential Fraud Detection via Copy-Paste Monitoring",
+      "description": "Detect and flag suspicious activity such as copy-paste actions during coding sessions.",
+      "details": "Track keystrokes and clipboard events in the editor. Flag sessions with high copy-paste activity for review.",
+      "testStrategy": "Simulate copy-paste actions and verify detection and flagging.",
+      "priority": "medium",
+      "dependencies": [
+        3
+      ],
+      "status": "pending",
+      "subtasks": []
+    },
+    {
+      "id": 7,
+      "title": "Develop Python Execution Environment",
+      "description": "Extend the code execution service to support Python code evaluation.",
+      "details": "Implement a Docker-based sandbox for Python code execution. Add a backend endpoint for Python code submission and test case validation.",
+      "testStrategy": "Test Python code execution, result comparison, and error handling.",
+      "priority": "medium",
+      "dependencies": [
+        3
+      ],
+      "status": "pending",
+      "subtasks": []
+    },
+    {
+      "id": 8,
+      "title": "Integrate NLP for Verbal Response Analysis",
+      "description": "Analyze verbal explanations using NLP to provide feedback on clarity and correctness.",
+      "details": "Use a fine-tuned LLM (e.g., via HuggingFace) to process transcribed user responses. Score responses based on predefined rubrics.",
+      "testStrategy": "Test transcription accuracy, NLP scoring, and feedback generation.",
+      "priority": "medium",
+      "dependencies": [
+        2,
+        3
+      ],
+      "status": "pending",
+      "subtasks": []
+    },
+    {
+      "id": 9,
+      "title": "Implement Adaptive Difficulty Algorithms",
+      "description": "Adjust question complexity based on user performance and experience level.",
+      "details": "Track user performance metrics. Dynamically select questions of appropriate difficulty using a scoring algorithm.",
+      "testStrategy": "Simulate user sessions with varying performance and verify question selection logic.",
+      "priority": "medium",
+      "dependencies": [
+        4,
+        7
+      ],
+      "status": "pending",
+      "subtasks": []
+    },
+    {
+      "id": 10,
+      "title": "Add Company-Specific Evaluation Templates",
+      "description": "Configure evaluation criteria and question sets for specific companies (e.g., Meta).",
+      "details": "Extend the question bank to include company-specific rubrics and preferred solutions. Allow selection of company modules during session setup.",
+      "testStrategy": "Verify company-specific questions and rubrics are correctly applied during sessions.",
+      "priority": "medium",
+      "dependencies": [
+        4,
+        9
+      ],
+      "status": "pending",
+      "subtasks": []
+    },
+    {
+      "id": 11,
+      "title": "Build Interview Workflow Engine",
+      "description": "Orchestrate the sequence of interview steps (setup, assessment, feedback).",
+      "details": "Implement a state machine to manage session flow (setup → SQL → Python → feedback). Track session state and transitions.",
+      "testStrategy": "Test session setup, progression, and completion.",
+      "priority": "high",
+      "dependencies": [
+        2,
+        3,
+        7
+      ],
+      "status": "pending",
+      "subtasks": []
+    },
+    {
+      "id": 12,
+      "title": "Design Result Storage Architecture",
+      "description": "Store and retrieve interview results, including code, scores, and feedback.",
+      "details": "Design database tables for session results. Implement endpoints to save and retrieve results.",
+      "testStrategy": "Test result storage, retrieval, and integrity.",
+      "priority": "medium",
+      "dependencies": [
+        2,
+        11
+      ],
+      "status": "pending",
+      "subtasks": []
+    },
+    {
+      "id": 13,
+      "title": "Implement Rule-Based Evaluation System",
+      "description": "Automatically evaluate code and verbal responses against predefined criteria.",
+      "details": "Compare user code and responses to expected solutions. Generate scores and feedback based on rubrics.",
+      "testStrategy": "Test evaluation accuracy, scoring, and feedback generation.",
+      "priority": "medium",
+      "dependencies": [
+        3,
+        7,
+        8
+      ],
+      "status": "pending",
+      "subtasks": []
+    },
+    {
+      "id": 14,
+      "title": "Develop Split-Screen UI with Code Editor and Video Chat",
+      "description": "Create a user interface with a code editor and video chat panel for a realistic interview experience.",
+      "details": "Use React or similar framework to build a split-screen layout. Integrate video chat using WebRTC.",
+      "testStrategy": "Test UI responsiveness, editor functionality, and video chat connectivity.",
+      "priority": "medium",
+      "dependencies": [
+        3,
+        7
+      ],
+      "status": "pending",
+      "subtasks": []
+    },
+    {
+      "id": 15,
+      "title": "Add Real-Time Test Case Validation Indicators",
+      "description": "Display real-time feedback on test case pass/fail status in the UI.",
+      "details": "Update the UI to show test case results as code is executed. Use color coding for pass/fail.",
+      "testStrategy": "Test real-time feedback display and accuracy.",
+      "priority": "medium",
+      "dependencies": [
+        3,
+        7,
+        14
+      ],
+      "status": "pending",
+      "subtasks": []
+    },
+    {
+      "id": 16,
+      "title": "Implement Progress Tracker with Time Allocation Warnings",
+      "description": "Show session progress and warn users when time is running low.",
+      "details": "Track elapsed time and remaining time for each session phase. Display warnings when time is nearly up.",
+      "testStrategy": "Test time tracking, warning display, and session progression.",
+      "priority": "medium",
+      "dependencies": [
+        11,
+        14
+      ],
+      "status": "pending",
+      "subtasks": []
+    },
+    {
+      "id": 17,
+      "title": "Build Multi-Interviewer Simulation Mode",
+      "description": "Allow multiple AI interviewers to simulate panel interviews.",
+      "details": "Extend the interview engine to support multiple interviewer personas. Simulate panel dynamics and questioning styles.",
+      "testStrategy": "Test multi-interviewer session setup, flow, and feedback.",
+      "priority": "low",
+      "dependencies": [
+        11,
+        14
+      ],
+      "status": "pending",
+      "subtasks": []
+    },
+    {
+      "id": 18,
+      "title": "Add Code Quality Metrics (Big-O Analysis)",
+      "description": "Analyze code submissions for efficiency and complexity.",
+      "details": "Implement AST analysis to estimate time/space complexity. Provide feedback on code quality.",
+      "testStrategy": "Test complexity analysis accuracy and feedback relevance.",
+      "priority": "low",
+      "dependencies": [
+        7,
+        13
+      ],
+      "status": "pending",
+      "subtasks": []
+    },
+    {
+      "id": 19,
+      "title": "Implement Plagiarism Detection Across User Base",
+      "description": "Detect and flag code similarity across user submissions.",
+      "details": "Use code similarity algorithms (e.g., fingerprinting, AST comparison) to identify potential plagiarism.",
+      "testStrategy": "Test detection accuracy and false positive/negative rates.",
+      "priority": "low",
+      "dependencies": [
+        6,
+        12
+      ],
+      "status": "pending",
+      "subtasks": []
+    },
+    {
+      "id": 20,
+      "title": "Integrate with Learning Management Systems (LMS)",
+      "description": "Allow integration with external LMS platforms for user management and reporting.",
+      "details": "Implement OAuth/LTI integration with popular LMS platforms. Sync user data and session results.",
+      "testStrategy": "Test user sync, session result export, and LMS compatibility.",
+      "priority": "low",
+      "dependencies": [
+        2,
+        12
+      ],
+      "status": "pending",
+      "subtasks": []
+    },
+    {
+      "id": 21,
+      "title": "Implement Hybrid Rule-Based/NLP System for AI Responses",
+      "description": "Combine rule-based logic with NLP to ensure realistic and accurate AI interviewer responses.",
+      "details": "Use a hybrid approach where NLP handles open-ended questions and rule-based logic ensures consistency for technical questions.",
+      "testStrategy": "Test response realism, consistency, and technical accuracy.",
+      "priority": "high",
+      "dependencies": [
+        8,
+        13
+      ],
+      "status": "pending",
+      "subtasks": []
+    },
+    {
+      "id": 22,
+      "title": "Secure Code Execution with Docker-in-Docker and Resource Limits",
+      "description": "Ensure secure and isolated code execution using Docker-in-Docker with strict resource limits.",
+      "details": "Configure Docker-in-Docker containers for code execution. Set CPU, memory, and network limits to prevent abuse.",
+      "testStrategy": "Test container isolation, resource limits, and security vulnerabilities.",
+      "priority": "high",
+      "dependencies": [
+        3,
+        7
+      ],
+      "status": "pending",
+      "subtasks": []
+    },
+    {
+      "id": 23,
+      "title": "Encrypt Stored Questions and Implement RBAC",
+      "description": "Protect sensitive question data with encryption and role-based access control.",
+      "details": "Encrypt question content in the database. Implement RBAC to restrict access to authorized roles.",
+      "testStrategy": "Test encryption, access control, and data integrity.",
+      "priority": "medium",
+      "dependencies": [
+        2,
+        4
+      ],
+      "status": "pending",
+      "subtasks": []
+    }
+  ]
+}
